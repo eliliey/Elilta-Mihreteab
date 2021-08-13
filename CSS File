@@ -1,0 +1,194 @@
+/* STYLE SECTIONING TAGS */
+
+body,
+html {
+  height: 100%;
+  font-size: 17px; 
+  font-family: "Montserrat", sans-serif; 
+  line-height: 1.5em; 
+  margin: 0em;
+  color: white; 
+  background-color: lightslategray; 
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 45px;
+  /* Change the font-family property to your linked font*/
+  font-family: "Bebas Neue", cursive;
+  color: #ffffff;;
+  text-align: center;
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-size: 35px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  text-align: center;
+  line-height: 1.3em;
+}
+h3{
+font-size: 20px;
+  font-family: "Libre Baskerville",serif;
+  color: white;
+  text-align: center;
+  line-height: 1.1em;
+}
+
+p a {
+  color: #eb0d0d;
+  text-decoration: none;
+}
+
+button {
+  border: 2px solid white;
+  background-color: #333333;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #df4646b6;
+  color: white;
+  border: none;}
+#facts{
+  text-align: center;
+}
+
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333b4;
+  border-style: solid;
+  border-color: black;
+}
+
+li.nav {
+  /* Styling for the <li class="nav"> element */
+  float: right;
+  font-size: 15px;
+}
+
+li.nav a {
+  
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+li.nav a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: #737373;
+  color: black;
+}
+
+.flex-container {
+  display: flex; 
+  flex-direction:column; 
+  flex-wrap: nowrap; 
+  justify-content: center; 
+  align-items: center; 
+
+  /* Design properties */
+  background-color: #4d000073;
+  padding: 2px;
+  opacity: 0.8;
+
+  /* Positioning properties */
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 15%; /* Change this value to move the box up or down */
+}
+
+.heading-home {
+  padding: 1%;
+  color: #ffffff;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.intro {
+  background-color: #ffffff; /* Add your own background color */
+  padding: 2%;
+  margin: 2%;
+  color: black; 
+  font-size: 20px; 
+  letter-spacing: 2px; /* Adds space between letters */
+  line-height: 1.2em; /* Adds space between lines */
+  text-align: center;
+
+}
+
+/*-----------TEXT SECTIONS-----------*/
+
+.t-section {
+  background-color: #262626;
+  padding: 10px 100px;
+  margin: 35px;
+  text-align: center;
+}
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+
+.main-message, .img-1, .img-2 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+
+  /* TODO: Add the property to create the parallax scrolling effect here */
+background-attachment: fixed;  
+}
+
+/*  Replace the current image URL to  your choice. This is the top image on your homepage. */
+.main-message {
+  background-image: url("https://images.unsplash.com/photo-1606994868513-d480e1a1cab0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+}
+
+
+.img-1 {
+  background-image: url("https://cdn.glitch.com/8b1ac87a-8804-44d3-a7f4-8991ea8317c3%2Fpatrick-hendry-6xeDIZgoPaw-unsplash.jpg?v=1592973510881");
+}
+
+
+.img-2 {
+  background-image: url("https://images.unsplash.com/photo-1483825366482-1265f6ea9bc9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWlyJTIwcG9sbHV0aW9uJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  
+}
+
+/*-----------IMAGE ATTRIBUTIONS (if required)-----------*/
+.attributions {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+
+/* TODO: Add a breakpoint if the screen is 700px or less */
+ @media screen and (max-width: 700px) {
+  .flex-container {
+    flex-wrap: wrap;
+    top: 40%;
+  }
+}
